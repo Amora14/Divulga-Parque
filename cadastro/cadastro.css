@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.logo-site{
+    display: flex;
+    justify-content: center;
+}
+.logo-site img{
+    width: 350px;
+}
+.first-column{
+    display: flex;
+    flex-direction: column;
+}
+.second-column{
+    display: flex;
+    flex-direction: column;
+}
+.div-cadastro{
+    display: flex;  
+    justify-content: center;
+}
+.cadastro{
+    display: flex;
+    gap: 10rem;
+}
+.digitar{
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    font-size: larger;
+    background-color: #EFEFEF;
+    border: 1px solid #9e9e9e;
+}
+#busca{
+    margin-bottom: 1rem;
+    background-color: #EFEFEF;
+}
+.link-cd{
+    margin-top: 1.8rem;
+    margin-bottom: 3rem;
+}
+.botao-novo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.botao{
+    width: 10rem;
+    height: 2.8rem;
+    background-color: #3379B3;
+    margin-bottom: 4rem;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    color: white;
+}
+label{
+    margin-bottom: 0.5rem;
+}
+
+#estudante{
+    margin-top: 0.2rem;
+margin-bottom: 0.8rem;
+}
+#funcionario{
+    margin-top: 0.2rem;
+    margin-bottom: 0.8rem;
+}
+.hab input{
+    margin-right: 1rem;
+}
