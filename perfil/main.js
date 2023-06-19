@@ -56,3 +56,50 @@ window.onload = () =>{
     })
     .catch((err) => console.error(err)) 
 }
+//----------------------------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------------pop-up de comentarios
+
+const botoes = document.querySelectorAll(".botao");
+const popcom = document.querySelector(".popcom");
+
+botoes.forEach(function(botao) {
+  botao.addEventListener("click", function() {
+    if (popcom.style.display === "none") {
+      popcom.style.display = "block";
+    } else {
+      popcom.style.display = "none";
+    }
+  });
+});
+
+//-----------------------------------------------------------------------------------pop-up numero de comentarios
+
+const titulocoment= document.getElementById("titulocoment");
+const popcoments= document.querySelectorAll(".popcoments");
+const popcomentsqnt = popcoments.length;
+
+titulocoment.textContent= titulocoment.textContent +' | ' + popcomentsqnt ;
+
+//-----------------------------------------------------------------------------------pop-up numero de notificacao
+
+const titulonot= document.getElementById("titulonot");
+const notificacao= document.querySelectorAll(".div_notificacao");
+const notificacaoqnt = notificacao.length;
+
+titulonot.textContent= titulonot.textContent +' | ' + notificacaoqnt ;
+
+//-----------------------------------pop up notificacao
+
+const divpopnotificacao = document.querySelector(".div_popnotificacao");
+const botaonot = document.getElementById("botaonot");
+
+botaonot.addEventListener("click", function() {
+  if (divpopnotificacao.style.display === "none") {
+    divpopnotificacao.style.display = "block";
+  } else {
+    divpopnotificacao.style.display = "none";
+  }
+});
+
+
+

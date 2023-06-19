@@ -1,15 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 *{
-    margin: 10px;
     padding: 0%;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #182840;
+}
+body{
+    background-color: #f7f7f7;
+}
+.navi{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #ffffffce;
+    backdrop-filter: blur(5px);
+    height: 3.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+    z-index: 1;
+}
+.esquerdo img{
+    width: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.direito img{
+    width: 1.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+#busca{
+    background-image: url(search\ copy.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 25px;
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    text-align: right;
+    padding: 3px;
 }
 
+/*-----------------------------------------------------------------------------------*/
 
 .main-perfil{
+    margin-top: 50px;
     display: flex;
     background-color: rgb(255, 255, 255);
     width: 100%;
     flex-direction: column;
     align-items: center;
+    word-wrap: break-word;
 }
 
 .div1{
@@ -18,70 +64,74 @@
 }
 
 .div1 img{
-    width: 260px;
-    height: 260px;
-    border-radius: 2rem;
-    border: 2px solid black;
-    box-shadow: 2px 2px 4px #000;
+    max-width: 95%;
+    height: auto;
+    border-radius: 10%;
+    padding: 10%;
 }
 
-.div1 p{
+.dados{
+    color: #989898;
     margin-top: 10px;
-    font-size: 20px;
 }
+.dados_resp{
+    color:#182840;
 
-#cor1{
-    color: #9D9D9D;
+}
+.div1 h4{
+    color: #989898;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #989898
 }
 
 .div1_1{
     background-color: white;
-    width: 20%;
+    width: 22%;
     padding-right: 3%;
 }
 
 .div1_2{
     background-color: white;
-    width: 20%;
+    width: 22%;
     padding: 2.5%;
 }
 
 .div1_3{
     background-color: white;
-    width: 20%; 
+    width: 22%; 
     padding: 2.5%;
 }
 
 .div1_4{
     background-color: white;
-    width: 20%;
+    width: 22%;
     padding: 2.5%;
 }
 
+/*-----------------------------------------------------------------------------------conteudo postagem*/
 .meio{
     display: flex;
     justify-content: center;
     margin-top: 1rem;
+    position: relative;
+    top: 8vh;
+    z-index: 0;
 }
 .feed{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #DEDEDE;
+    background-color: #ffff;
     border-radius: 5px;
-    width: 58vw;
-    border: 1px solid #9e9e9e;
-
+    width: 55vw;
+    border: 1px solid #cccccc;
 }
 .div-comu{
     display: flex;
     flex-direction: column;
-    width: 65%;
     border-radius: 5px;
 }
 .div-comu1{
     display: flex;
     gap: 10px;
+    padding: 5px;
 }
 
 .titulo_post{
@@ -96,33 +146,156 @@
 .div-comu1 img{
     width: 80px;
     height: 80px;
-    border-radius: 1rem;
+    border-radius: 5px;
 }
 .div-post{
-    font-size: 18px;
-    padding: .5rem;
-    background-color: #efefef;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    font-size: 15px;
+    padding-right: 1rem;
+    margin-left: 6rem;
 }
 .div-post img{
-    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.comentsbaixo{
+    margin-left: 8px;
+}
+.react{
+    background-color: transparent;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+.botao{
+    background-color: #98c1ff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 8px;
+}
+.resp{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    width: 53vw;
+    height: 4vh;
 }
 
-.div-coments{
+/*------------------------------------------------------------------------------------------------pop-up comentarios*/
+.td {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    background-color: #efefef;
-    width: 30%;
-    height: 90%;
-    border-radius: 5px;
-    border: 1px solid #9e9e9e;
-    padding: .5rem;
- 
+    gap: 5px;
 }
-
-.coments img{
+.perfil {
+    display: flex;
+    align-items: start;
+    gap: 5px;
+}
+.popcont{
+    overflow-y: auto;
+    width: 40vw;
+    height: 50vh;
+}
+.popcom{
+    display: none;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 999;
+    left: 30vw;
+    top: 20vh;
+}
+.popcoments{
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+.popcoments img{
     width: 50px;
     border-radius: 5px;
+}
+.popresp{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 37vw;
+    height: 4vh;
+}
+
+/*--------------------------------------------------------------------------------------------pop-up notificacao*/
+.conteudo_not{
+    overflow-y: auto;
+    width: 25vw;
+    height: 70vh;
+}
+.div_popnotificacao{
+    display: none;
+    background-color: #f7f7f7;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 999;
+    left: 1vw;
+    top: 9vh;
+}
+.div_notificacao{
+    background-color: #f7f7f7;
+    font-size: 14px;
+    gap: 5px;
+    padding: 10px;
+    border-bottom: 1px solid #9e9e9e;
+}
+#titulonot{
+    background-color: white;
+}
+.div_notificacao img{
+    width: 50px;
+    border-radius: 5px;
+}
+#botaonot{ 
+    border: none;
+    background-color: transparent;
+    margin-left: 8px;
+}
+ /*---------------------------------------------------------------------------------------------pop up editar*/
+.popeditar{
+    width: 40vw;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 999;
+    left: 30vw;
+    top: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.popeditar h4{
+    color: #989898;
+    letter-spacing: .5px;
+    border-bottom:1px solid #989898;
+    margin-bottom: 10px;
+}
+.colun1{
+    margin-top: 25px;
+}
+.colun1 input{
+    width: 15vw;
+}
+
+.colun2{
+    margin-top: 25px;
+}
+.colun2 input{
+   width: 15vw;
 }
