@@ -8,66 +8,216 @@
     <title>feed</title>
 </head>
 <body>
-    <nav class="navi">
-        <div class="esquerdo">
-            <img src="people.png" alt=""> 
-            <img src="not.png" alt="">
-        </div>
-        <div class="direito">
+        <nav class="navi">
+            <div class="esquerdo">
+                <img src="people.png" alt=""> 
+                <button id="botaonot"> 
+                    <img src="report.png" alt="">
+                </button>
+            </div>
             <input id="busca" type="text" placeholder="Buscar">
-            <img src="exp.png" alt="">
-            <img src="Vector (1).png" alt="">
-        </div>
-    </nav>
-    <aside class="ae">
+            <div class="direito">
+                <img src="exp.png" alt="">
+                <img src="Vector (1).png" alt="">
+            </div>
+        </nav>
+        <aside class="ae">
 
-        <div class="notificacao">
-            <h1>Notificações</h1>
-            <p class="branco"><b>André Alves </b> comentou na sua publicação</p>
-            <p><b>Anna Carolina</b> reagiu a sua publicação</p>
-            <p class="branco"><b>Renata Moraes</b> comentou na sua publicação</p>
-        </div>
+            <div class="notificacao">
+                <h1>Notificações</h1>
+                <p><b>André Alves </b> comentou na sua publicação</p>
+                <p><b>Anna Carolina</b> reagiu a sua publicação</p>
+                <p><b>Renata Moraes</b> comentou na sua publicação</p>
+            </div>
 
-        <aside class="ae2">
-            <h1>Comunidades</h1>
-            <div class="comunidades">
-                <div class="com branco">
-                    <img src="imagem.jpg" alt="" texto="">
-                    <p> <b>Energias Renovaveis</b></p>
+            <aside class="ae2">
+                <h1>Comunidades</h1>
+                <div class="comunidades">
+                    <div class="com">
+                        <img src="imagem.jpg" alt="" texto="">
+                        <p> <b>Energias Renovaveis</b></p>
+                    </div>
+                    <div class="com">
+                        <img  src="imagem.jpg" alt="">
+                        <p> <b> Impressão 3D</b></p>
+                    </div>
+                    <div class="com">
+                        <img src="imagem.jpg" alt="">
+                        <p><b>Cybersegurança</b></p>
+                    </div>
+                    <div class="com">
+                        <img src="imagem.jpg" alt="">
+                        <p><b>Urbanismo</b></p>
+                    </div>
+                    <div class="com">
+                        <img src="imagem.jpg" alt="">
+                        <p><b>ENG. de Software</b></p>
+                    </div>
                 </div>
-                <div class="com">
-                    <img  src="imagem.jpg" alt="">
-                    <p> <b> Impressão 3D</b></p>
+            </aside>    
+        </aside>
+        <aside class="ad">
+            <div class="trends">
+                <h1>Trends</h1>
+                <b><p>#formandos2023</p>
+                <p>uniamerica</p>
+                <p>#DiaDaBondade</p></b>
+            </div>
+        </aside>
+<!-- ---------------------------------------------------------------------------comentarios pop up -->
+    <div class="popcom">
+        <h1 id="titulocoment">Comentários</h1>
+        <div class="popcont">
+            <div class="popcoments">
+                <div class="perfil">
+                    <img src="pesseoa1.jfif" alt="">
+                    <div class="td">
+                        <h4>Rafael B.</h4>
+                        <p>10/05/2023</p>
+                    </div>
                 </div>
-                <div class="com branco">
+                <p>Muito legal! Espero ver logo as mudanças.</p>
+                <input class="popresp" type="text" placeholder="Responder">
+            </div>
+            <div class="popcoments"> 
+                <div class="perfil">
+                    <img src="pessoa3.jfif"alt="">
+                    <div class="td">
+                        <h4>Maria Fernanda</h4>
+                        <p>12/05/2023</p>
+                    </div>
+                </div>
+                <p>Também estive na cerimônia, realmente, o turismo é mesmo a indústria dos sonhos!</p>
+                <input class="popresp"type="text" placeholder="Responder">
+            </div>
+            <div class="popcoments">
+                <div class="perfil">
                     <img src="imagem.jpg" alt="">
-                    <p><b>Cybersegurança</b></p>
+                    <div class="td">
+                        <h4>Bernardo dos Santos</h4>
+                        <p>12/05/2023</p>
+                    </div>
                 </div>
-                <div class="com">
-                    <img src="imagem.jpg" alt="">
-                    <p><b>Urbanismo</b></p>
-                </div>
-                <div class="com branco">
-                    <img src="imagem.jpg" alt="">
-                    <p><b>ENG. de Software</b></p>
+                <p>muito bom.</p>
+                <input class="popresp" type="text" placeholder="Responder">
+            </div>
+        </div>
+        <input class="popresp" type="text" placeholder="Comentar">
+        <button class="botao">X</button>
+    </div>
+<!-- --------------------------------------------------------------------------notificacao pop up -->
+<div class="div_popnotificacao">
+    <h1 id="titulonot">Notificações</h1>
+    <div class="conteudo_not">
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="pesseoa1.jfif" alt="">
+                <div class="td">
+                    <p><b>Rafael B.</b> comentou na sua publicação em <b>Turismo</b></p>
+                    <p>10/05/2023</p>
                 </div>
             </div>
-        </aside>    
-    </aside>
-    <aside class="ad">
-        <div class="trends">
-            <h1>Trends</h1>
-            <b><p class="branco">#formandos2023</p>
-            <p>uniamerica</p>
-            <p class="branco">#DiaDaBondade</p></b>
         </div>
-    </aside>
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="pesseoa1.jfif" alt="">
+                <div class="td">
+                    <p class="reactsoma"><b>Rafael B.</b> reagiu na sua publicação em <b>Turismo</b></p>
+                    <p>10/05/2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="imagem.jpg" alt="">
+                <div class="td">
+                    <p class="reactsoma"><b>Vanessa L.</b> reagiu na sua publicação em <b>Turismo</b></p>
+                    <p>10/05/2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="div_notificacao"> 
+            <div class="perfil">
+                <img src="pessoa3.jfif"alt="">
+                <div class="td">
+                    <p><B>Maria Fernanda</B> comentou na sua publicação em <b>Turismo</b></p>
+                    <p>12/05/2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="imagem.jpg" alt="">
+                <div class="td">
+                    <p><b>Bernardo dos Santos</b> comentou na sua publicação em <b>Turismo</b></p>
+                    <p>12/05/2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------------------------------------------------------------------vizu usuario-->
+<div class="popvizu">
+    <main class="main-perfil">
+        <div class="div1">
+            <div class="div1_1" id="id_img">
+        
+            </div>
+            <div class="div1_2">
+                <div>
+                    <h4>Dados pessoais</h4>
+                </div>
+                <p id="cor1" class="dados">Nome:</p>
+                <p id="nome1" class="dados_resp"></p>
+                <p id="cor1" class="dados">Data de nascimento:</p>
+                <p class="dados_resp">10/02/2003</p>
+                <p id="cor1" class="dados">Gênero:</p>
+                <p id="gen1" class="dados_resp"></p>
+            </div>
+            <div class="div1_3">
+                <div>
+                    <h4>Dados Instituicionais</h4>
+                </div>
+                <p id="cor1" class="dados">Instituição:</p>
+                <p id="palavra" class="dados_resp"></p>
+                <p id="cor1" class="dados">Membro desde:</p>
+                <p id="data" class="dados_resp"></p>
+                <p id="cor1" class="dados">Contato:</p>
+                <p class="dados_resp">matanubs123@gmail.com</p>
+            </div>
+        </div>
+            <div class="div1_4">
+                <h4 id="cor1" >Comunidades seguidas</h4>
+                <div class="cont1_4">
+                    <div class="div_vizucont">
+                        <img src="imagem.jpg" alt="">
+                        <p>comunidade</p>
+                    </div>
+                    <div class="div_vizucont">
+                        <img src="imagem.jpg" alt="">
+                        <p>comunidade</p>
+                    </div>
+                    <div class="div_vizucont">
+                        <img src="imagem.jpg" alt="">
+                        <p>comunidade</p>
+                    </div>
+                    <div class="div_vizucont">
+                        <img src="imagem.jpg" alt="">
+                        <p>comunidade</p>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+</div>
+<!-- --------------------------------------------------------------------------------conteudo -->
+
     <article class="meio">
         <div class="feed">
             <div class="div-comu">
                     <div class="div-comu1">
                         <div>
-                            <img src="pessoa2.jfif" alt="pessoa2">
+                            <img class="pessoa" src="pessoa2.jfif" alt="pessoa2">
                         </div>
                         <div class="div-comu2">
                             <div class="titulo_post">
@@ -79,31 +229,53 @@
                     </div>
                     <div class="div-post"> 
                         <p>
-                            Estive hoje na crimônia de lançamento da Coneta-IGU.
+                            Estive hoje na cerimônia de lançamento da Coneta-IGU.
                             Estou ansiosa com o lançamento do programa, com certeza fará com que nosso país e nossa cidade 
-                            vire um atrative de destino ainda maior!
+                            vire um atrativo de destino ainda maior!
                         </p>
                         <br>
                         <img src="post1.jpg" alt="">
                     </div>
             </div>
-            <div class="div-coments">
-                    <h2>comentarios</h2>
-                    <br>
-                        <div class="coments">
-                            <img src="pesseoa1.jfif" alt="">
-                            <h4>Rafael B.</h4>
-                            <p>10/05/2023</p>
-                            <p>Muito legal! Espero ver logo as mudanças.</p>
+                <div class="comentsbaixo">
+                    <button class="react"> &#x2600;</button>
+                    <button class="react"> &#x26c8;</button>
+                    <button class="botao"> Comentários </button>
+                    <input class="resp" type="text" placeholder="Comentar">
+                </div>
+      </div>
+    </article>
+
+    <!-----------------------------------------------------------------------2 postagem-->
+    <article class="meio">
+        <div class="feed">
+            <div class="div-comu">
+                    <div class="div-comu1">
+                        <div>
+                            <img  class="pessoa" src="imagem.jpg" alt="pessoa2">
                         </div>
-                        <div class="coments"> 
-                            <img src="pessoa3.jfif"alt="">
-                            <h4>Maria Fernanda</h4>
-                            <p>12/05/2023</p>
-                            <p>Também estive b=na cerimônia, realmente, o turismo é mesmo a indústria dos sonhos!</p>
+                        <div class="div-comu2">
+                            <div class="titulo_post">
+                                <h3>Renato Rodrigues</h3>
+                                <p>09/05/2023</p>
+                            </div>
+                            <p>Postado em: Avisos UNILA</p>
                         </div>
+                    </div>
+                    <div class="div-post"> 
+                        <p>
+                            Hoje teremos uma palestra com o professor Gustavo sobre História Latino-Americana.
+                        </p>
+                    </div>
+            </div>
+            <div class="comentsbaixo">
+                <button class="react"> &#x2600;</button>
+                <button class="react"> &#x26c8;</button>
+                <button class="botao"> Comentários </button>
+                <input class="resp" type="text" placeholder="Comentar">
             </div>
       </div>
     </article>
+    <script src="feed.js"></script>
 </body>
 </html>
