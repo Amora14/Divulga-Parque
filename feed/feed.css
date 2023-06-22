@@ -9,83 +9,149 @@
 body{
     background-color: #f7f7f7;
 }
-h1{
-    background-color: #ffffffce;
-    backdrop-filter: blur (5px);
-    padding: 5px;
-    border-bottom: 1px solid #cccccc;
+.header h1{
+    background-color: rgba(121, 189, 190, 0.712);
+    border-end-end-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .navi{
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
-    background-color: #ffffffce;
+    background-color: rgba(121, 189, 190, 0.712);
     backdrop-filter: blur(5px);
     height: 3.2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #cccccc;
-    z-index: 1;
+
 }
 .esquerdo img{
     width: 2rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: width 0.5s, height 0.5s;
+    margin: 6px;
 }
+
+.esquerdo img:hover{
+    background-color: rgb(241, 241, 241);
+    width: 2.5rem;
+    border-radius: 1rem;
+}
+
 .direito img{
     width: 1.8rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    transition: width 0.5s, height 0.5s;
+    margin: 6px;
+}
 
+.direito img:hover{
+    background-color: rgb(241, 241, 241);
+    border-radius: 1rem;
+    width: 2.5rem;
+}
+
+.direito{
+    display: flex;
+    align-items: center;
 }
 #busca{
-    background-image: url(search\ copy.png);
+    background-image: url(../imagens/pesquisar.png);
     background-repeat: no-repeat;
-    background-position: left;
+    background-position: right;
+    background-position: 5px center;
     background-size: 25px;
-    background-color: #f7f7f7;
-    border: 1px solid #cccccc;
-    border-radius: 5px;
-    text-align: right;
-    padding: 3px;
+    width: 12rem;
+    height: 5vh;
+    border: 1px solid #9e9e9e;
+    border-radius: 2rem;
+    text-indent: 35px;
+    font-size: 16px;
 }
 /*----------------------------------------------------------------------------------------------area lateral esquerda*/
 .ae{
-    position: fixed;
-    top: 50px;
-    left: 0;
     float: left;
     font-size: 15px;
+    background-color: white;
     height: 90vh;
     width: 20vw;
-    border-right: 1px solid #cccccc;
+    border-radius: 5px;
+    position: fixed;
+    left: 0;
+    float: left;
+    top: 52px;
+    z-index: 1;
 }
 .notificacao{
     max-height: 45vh;
     overflow: hidden;
-    border-bottom: 1px solid  #cccccc;
+}
+
+.notificacao h1{
+    padding: 12px;
 }
 
 .notificacao p{
     padding: 12px;
+    letter-spacing: -.05em;
+    border-bottom: 1px solid rgba(207, 230, 230, 0.658);
+    border-right: 1px solid rgba(207, 230, 230, 0.658);
     word-wrap: break-word;
-    border-bottom: 1px solid #cccccc;
 }
-.comunidades{
+
+.notificacao p{
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 1rem;
+}
+
+.notificacao p:hover {
+    background-color: rgb(209, 201, 201);
+    border-radius: 1rem;
+}
+
+
+.ae2{
     display: flex;
     flex-direction: column;
-    word-wrap: break-word;
     overflow-y: auto;
     height: 47vh;
 }
+
+.comunidades{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: -.05em;
+    word-wrap: break-word;  
+}
+
 .com{
     display: flex;
-    align-items: center;
-    padding: 5px;
-    border-bottom: 1px solid #cccccc;
+    padding: 10px;
+    border-bottom: 1px solid rgba(207, 230, 230, 0.658);
+    border-right: 1px solid rgba(207, 230, 230, 0.658);
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 1rem;
 }
+
+.com:hover {
+    background-color: rgb(209, 201, 201);
+    border-radius: 1rem;
+}
+
 .com img{
     width: 50px;
     padding-right: 15px;
@@ -94,6 +160,7 @@ h1{
 }
 .ae2 h1{
     font-size: 20px;
+    padding: 12px;
 }
 /*-------------------------------------------------------------------------------------------area lateral direita*/
 .ad{
@@ -102,14 +169,28 @@ h1{
     right: 0;
     float: right;
     width: 20vw;
-    border-left: 1px solid #cccccc;
+    border-bottom: 1px solid rgba(207, 230, 230, 0.658);
+    border-left: 1px solid rgba(207, 230, 230, 0.658);
     border-radius: 5px;
+    z-index: 2;
 }
 .trends p{
     padding: 12px;
     font-size: 15px;
     border-bottom: 1px solid #cccccc;
     word-wrap: break-word;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    border-radius: 1rem;
+}
+
+.trends p:hover{
+    background-color: rgb(209, 201, 201);
+    border-radius: 1rem;
+}
+
+.trends h1{
+    padding: 12px;
 }
 /*---------------------------------------------------------------------------------------------conteudo do feed*/
 .meio{
@@ -120,6 +201,7 @@ h1{
     top: 8vh;
     z-index: 0;
 }
+
 .feed{
     background-color: #ffff;
     border-radius: 5px;
