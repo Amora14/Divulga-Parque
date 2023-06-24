@@ -11,7 +11,9 @@
         <nav class="navi">
             <div class="esquerdo">
                 <img src="../imagens/perfil.png" alt=""> 
-                <img src="../imagens/notificacao.png" alt="">
+                <button id="botaonot"> 
+                    <img src="../imagens/notificacao.png" alt="">
+                </button>
             </div>
             <div class="direito">
                 <input id="busca" type="text" placeholder="Pesquisar" autocomplete="off" spellcheck="false">
@@ -63,16 +65,65 @@
             </div>
         </aside>
     </header>
-
-
+<!--------------------------------------------------------------------notificacoes popup-->
+<div class="div_popnotificacao">
+    <h1 id="titulonot">Notificações</h1>
+    <div class="conteudo_not">
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="../imagens/pesseoa1.jfif" alt="">
+                <div class="td">
+                    <p><b>Rafael B.</b> comentou na sua publicação em <b>Turismo</b></p>
+                    <p>10/05/2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="../imagens/pesseoa1.jfif" alt="">
+                <div class="td">
+                    <p class="reactsoma"><b>Rafael B.</b> reagiu na sua publicação em <b>Turismo</b></p>
+                    <p>10/05/2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="../imagens/imagem.jpg" alt="">
+                <div class="td">
+                    <p class="reactsoma"><b>Vanessa L.</b> reagiu na sua publicação em <b>Turismo</b></p>
+                    <p>10/05/2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="div_notificacao"> 
+            <div class="perfil">
+                <img src="../imagens/pesseoa1.jfif"alt="">
+                <div class="td">
+                    <p><B>Maria Fernanda</B> comentou na sua publicação em <b>Turismo</b></p>
+                    <p>12/05/2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="div_notificacao">
+            <div class="perfil">
+                <img src="../imagens/imagem.jpg" alt="">
+                <div class="td">
+                    <p><b>Bernardo dos Santos</b> comentou na sua publicação em <b>Turismo</b></p>
+                    <p>12/05/2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------------------------------------------------------------------------------conteudo meio-->
 
     <article class="art_comu">
         <div class="div_principal">
             <div class="div_tudo">
                 <h1>Comunidades recomendadas</h1>
             </div>
-            <img src="../imagens/linha.png" alt="" class="linha">
-            <h2>Ciência e Tecnologias</h2>
+            <h3>Ciência e Tecnologias</h3>
             <div class="div_meio">
                 <button>←</button>
                 <div class="div_meio2">
@@ -95,8 +146,8 @@
                 </div>
                 <button>→</button>
             </div>
-            <img src="../imagens/linha.png" alt="" class="linha">
-            <h2>Arquitetura e Engenharia</h2>
+
+            <h3>Arquitetura e Engenharia</h3>
             <div class="div_meio">
                 <button>←</button> 
                 <div class="div_meio2">
@@ -119,8 +170,8 @@
                 </div>
                 <button>→</button>
             </div> 
-            <img src="../imagens/linha.png" alt="" class="linha">
-            <h2>Economia, Sociedade e Política</h2>
+
+            <h3>Economia, Sociedade e Política</h3>
             <div class="div_meio">
                <button>←</button>
                 <div class="div_meio2">
@@ -143,8 +194,8 @@
                 </div>
                 <button>→</button>
             </div> 
-            <img src="../imagens/linha.png" alt="" class="linha">
-            <h2>Infraestrutura e Território</h2>
+            
+            <h3>Infraestrutura e Território</h3>
             <div class="div_meio">
                 <button>←</button>
                 <div class="div_meio2">
@@ -171,7 +222,7 @@
         </div>
         
     </article> 
-
+<script src="explorar.js"></script>
 </body>
 
 </html>
