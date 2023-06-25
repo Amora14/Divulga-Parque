@@ -89,26 +89,29 @@ body{
 .art_comu{
     display: flex;
     justify-content: center;
-    margin: 3.5rem;
+    margin-top: 3.3rem;
     
 }
 
 .main-perfil{
     display: flex;
-    background-color: rgb(255, 255, 255);
     width: 80%;
     flex-direction: column;
     align-items: center;
+    background-color: white;
+    border: 1px solid #9e9e9e;
 }
 
 .div1{
     display: flex;
     width: 100%;
-    
+    background-color: white;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 5px;
 }
 
 .div1 img{
-    max-width: 95%;
+    max-width: 90%;
     height: auto;
     border-radius: 10%;
     border: 1px solid #9e9e9e;
@@ -117,7 +120,7 @@ body{
 
 .div1 p{
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #cor1{
@@ -125,15 +128,13 @@ body{
 }
 
 .div1_1{
-    background-color: white;
     width: 20%;
-    padding: 2.5%;
+    padding: 2%;
 }
 
 .div1_2{
-    background-color: white;
     width: 20%;
-    padding: 2.5%;
+    padding: 2%;
 }
 
 .div1_2 h3{
@@ -143,9 +144,8 @@ body{
 }
 
 .div1_3{
-    background-color: white;
-    width: 20%; 
-    padding: 2.5%;
+    width: 25%; 
+    padding: 2%;
     word-wrap: break-word;
 }
 
@@ -156,19 +156,17 @@ body{
 }
 
 .div1_4{
-    background-color: white;
     width: 20%;
-    padding: 2.5%;
+    padding: 2%;
 }
 
 .feed{
     display: flex;
     flex-direction: column;
     background-color: #ffff;
-    border-radius: 5px;
     width: 55vw;
     margin-top: 50px;
-    border: 1px solid #cccc; 
+    border-bottom: 1px solid #9e9e9e; 
 }
 
 
