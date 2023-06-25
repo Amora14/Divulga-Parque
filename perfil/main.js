@@ -39,8 +39,6 @@ window.onload = () =>{
           names.innerText = character.name;
         });
 
-
-
         const gender = document.getElementById('gen1');
     
         if(character.gender === "Male"){
@@ -59,10 +57,24 @@ window.onload = () =>{
    })
   .catch((err) => console.error(err)) 
 }
+//------------------------------------------------------------------------------------titulo h3 comunidades criadas
 
+const display_comu_criadas = document.querySelectorAll(".display_comu_criadas");
+const comu_criadas = document.querySelectorAll(".comu_criadas");
 
-//----------------------------------------------------------------------------------------------------
-//-------------------------------------------------------------------------------------pop-up de comentarios
+comu_criadas.forEach(function(div){
+  if(div.innerHTML === ""){
+    display_comu_criadas.forEach(function(display){
+      display.style.display = "none";
+    });
+  }else{
+    display_comu_criadas.forEach(function(display){
+      display.style.display = "block";
+    });
+  }
+});
+
+//------------------------------------------------------------------------------------pop-up de comentarios
 
 const botoes = document.querySelectorAll(".botao");
 const popcom = document.querySelector(".popcom");
@@ -105,14 +117,16 @@ botaonot.addEventListener("click", function() {
     divpopnotificacao.style.display = "none";
   }
 });
+
 //-----------------------------------------------------------------pop up editar
 const popedit = document.getElementById("popedit");
-const displayedit = document.querySelectorAll(".displayedit");
+const salvaredit = document.getElementById("salvaredit");
+const displayedit = document.querySelector(".displayedit");
 
 popedit.addEventListener("click", function() {
-  if (displayedit.style.display === "none") {
     displayedit.style.display = "block";
-  } else {
-    displayedit.style.display = "none";
-  }
+});
+
+salvaredit.addEventListener("click", function(){
+  displayedit.style.display = "none";
 });

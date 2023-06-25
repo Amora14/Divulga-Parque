@@ -106,7 +106,6 @@ body{
     display: flex;
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid #9e9e9e;
     border-radius: 5px;
 }
 
@@ -117,14 +116,13 @@ body{
     border: 1px solid #9e9e9e;
     box-shadow: 2px 2px 4px #000;
 }
-
+#cor1{
+    color: #989898;
+    letter-spacing: .5px;
+}
 .div1 p{
     margin-top: 10px;
     font-size: 16px;
-}
-
-#cor1{
-    color: #9D9D9D;
 }
 
 .div1_1{
@@ -144,7 +142,7 @@ body{
 }
 
 .div1_3{
-    width: 25%; 
+    width: 23%; 
     padding: 2%;
     word-wrap: break-word;
 }
@@ -156,8 +154,23 @@ body{
 }
 
 .div1_4{
-    width: 20%;
+    width: 23%;
     padding: 2%;
+}
+
+.div1_4 img{
+    margin: 5px;
+    width: 30px;
+}
+
+.div1_4 h3{
+    color: #989898;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #989898;
+}
+
+.display_comu_criadas{
+    display: block;
 }
 
 .feed{
@@ -166,9 +179,8 @@ body{
     background-color: #ffff;
     width: 55vw;
     margin-top: 50px;
-    border-bottom: 1px solid #9e9e9e; 
+    border-top: 1px solid #9e9e9e; 
 }
-
 
 .feed_alinhar{
     display: flex;
@@ -206,14 +218,12 @@ body{
     font-size: 20px;
     background-color: white;
     border-radius: 10px;;
-
 }
 
 .feed_post img{
-    width: 65%;
-    height: 65%;
+    width: 100%;
+    min-height: auto;
     border-radius: 5px;
-    border: 2px solid rgba(128, 128, 128, 0.452);
     margin-top: 10px;
 }
 
@@ -343,10 +353,10 @@ body{
     display: none;
 }
  .popeditar{
-    display: none;
     width: 40vw;
     background-color: white;
-    border: 1px solid #cccccc;
+    border: 1px solid #9e9e9e;
+    box-shadow: 2px 2px 4px #000;
     border-radius: 5px;
     position: fixed;
     z-index: 999;
@@ -361,9 +371,11 @@ body{
     border-bottom:1px solid #989898;
     margin-bottom: 10px;
 }
+
 .colun1{
     margin-top: 25px;
 }
+
 .colun1 input{
     width: 15vw;
 }
@@ -371,6 +383,38 @@ body{
 .colun2{
     margin-top: 25px;
 }
+
 .colun2 input{
    width: 15vw;
 }
+/*-------------------botao salvar*/
+#salvaredit{
+    background-color: #98c1ff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s; 
+}
+
+#salvaredit:hover {
+    background-color: #3584fc;
+  }
+
+
+/*------------------botao editar*/
+#popedit{
+    margin-top: 10px;
+    background-color: #98c1ff;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: background-color 0.5s; 
+}
+
+#popedit:hover {
+    background-color: #3584fc;
+  }
