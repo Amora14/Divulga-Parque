@@ -98,17 +98,9 @@ body{
     top: 52px;
     z-index: 1;
 }
-
-.notificacao{
+.dados_comu{
     max-height: 45vh;
     overflow: hidden;
-}
-
-.notificacao h1{
-    padding: 12px;
-}
-
-.notificacao p{
     padding: 12px;
     letter-spacing: -.05em;
     border-bottom: 1px solid rgba(207, 230, 230, 0.658);
@@ -116,15 +108,13 @@ body{
     word-wrap: break-word;
 }
 
-.notificacao p{
-    cursor: pointer;
-    transition: background-color 0.5s;
-    border-radius: 1rem;
+.dados_comu img{
+    width: 60px;
 }
 
-.notificacao p:hover {
-    background-color: rgb(209, 201, 201);
-    border-radius: 1rem;
+.dados_cima{
+    display: flex;
+    gap: 5px;
 }
 
 .ae2{
