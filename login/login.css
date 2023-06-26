@@ -93,7 +93,14 @@
     border: none;
     border-radius: 5px;
     font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
+
+.btn-entrar:hover{
+    background-color: rgb(9, 63, 107);
+}
+
 .btn-cadastro{
     width: 10rem;
     height: 3rem;
@@ -101,7 +108,14 @@
     border: none;
     border-radius: 5px;
     font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
+
+.btn-cadastro:hover{
+    background-color: #ceee57;
+}
+
 #foto{
     height: 20rem;
 }

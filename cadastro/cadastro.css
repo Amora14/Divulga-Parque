@@ -58,7 +58,14 @@
     border-radius: 10px;
     font-size: large;
     color: white;
+    cursor: pointer;
+    transition: background-color 0.5s;
 }
+
+.botao:hover{
+    background-color: #0b2b46;
+}
+
 label{
     margin-bottom: 0.5rem;
 }
